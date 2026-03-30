@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/066/499/original/sunny-and-rainy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png" alt="weather logo" class="img">
+                    <span id="span">Weather App</span>
+                </div>
+            </div>
+            <div class="col-6">
+            <input type="text" class="form-control" placeholder="Enter Location" aria-label="City"> 
+          </div>
+          <div class="col-3">
+         <button type="button" class="btn btn-danger" id="search">Search</button>
+         </div>
+        </div>
+        
+      </div>
+    </header>
+     <main>
+        <div class="container weather app">
+            <div class="row  main-row  ">
+                <div class="col-4 temprature">
+               <div class="temp">
+                <span class="data">temp = </span>
+                <span id="temprature">22.3 °C</span>
+               </div>
+               </div>
+        
+             <div class="col-4 location&timeData">
+             <div class="location-time">
+              <span class="data">location</span>
+              <span id="city">pune</span>
+              <span class="data">Date & Time</span>
+              <span  id="date">29-3-2026</span>
+              <span  id="time">11.30</span>
+              </div>
+            
+
+           </div>
+            <div class="col-4  emoji&condition">
+            <div class="icon-text">
+            <span class="data">Weather condition</span>
+            <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="icon-img" class="icon-img">
+            <span id="sunny">sunny</span>
+                </div>
+                </div>
+       
+       
+      
+        </div>
+     </main>
+
+     <script src="script.js"></script>
+    
+</body>
+</html>
